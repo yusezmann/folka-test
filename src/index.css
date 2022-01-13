@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Gotham, sans-serif;
+}
+
+.container {
+  margin: 9.813rem 29.563rem;
+}
+
+.login__title {
+  margin: 42px 34px
+}
+
+.card {
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.cards {
+  box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.text__title {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24.88px;
+}
+
+.input__title {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+}
+
+.btn {
+  border-radius: 7px;
+}
+
+.search {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 9px 0px 0px 9px;
+}
+.btn__search {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 9px 9px 0px;
+}
+
+.card__img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 4px;
+}
+
+@layer components {
+  .card {
+    @apply 
+    border-2
+    md:w-[568px]
+    md:h-[509px]
+    justify-center
+    self-center 
+    m-6
+  }
+  .cards {
+    @apply 
+    border-2
+    md:w-[568px]
+    md:h-[550px]
+    justify-center
+    self-center 
+    m-6
+  }
+  
+  .input__title {
+    @apply 
+    focus:outline-none
+    p-2
+    border
+    md:w-full
+    md:h-[59px]
+  }
+
+  .show__pass {
+    @apply    
+    cursor-pointer
+    w-12
+    relative
+    left-96
+    bottom-11
+    ml-14
+    bg-white
+    text-primary
+  }
+  
+  .btn {
+    @apply
+    bg-red p-3 w-full 
+    text-white
+    uppercase
+  }
+  
+  .search {
+    @apply
+    border
+    md:w-[350px]
+    md:h-[57px]
+    focus:bg-white
+    focus:border-secondary
+    focus:outline-none
+  }
+
+  .card__img {
+    @apply
+    md:w-full
+    md:h-full
+    border
+  }
+
+  .product__list {
+    @apply
+    md:grid md:grid-cols-12 gap-3 md:mx-[70px] mx-4
+  }
+
+  .line__harga {
+    @apply  
+    mx-4
+    mb-2
+    bg-gray-200
+    rounded-full
+    h-2.5
+  }
+
+  .filterBy {
+    @apply
+    bg-secondary
+    border
+    flex flex-row
+    justify-between
+    w-full
+    px-4
+    py-2
+  }
+
+  .filterBy__item {
+    @apply 
+    flex flex-row
+    text-center
+    items-center
+    justify-between
+    text-brown
+    px-4
+  }
+
+  .dropdown__shop {
+    @apply
+    md:grid md:grid-cols-12 gap-4 bg-secondary h-16 mb-6
+  }
+}
